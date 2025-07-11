@@ -1,3 +1,0 @@
-"Git TEST"
-"Git TEST2"
-"Git Test3"
