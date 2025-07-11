@@ -12,6 +12,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  margin-bottom: 20rem;  /* 푸터 높이만큼 */
 }
 
 /* 아이디 선택자 */
@@ -131,13 +132,16 @@ button:hover {
 
 /* 푸터 스타일 */
 footer {
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.9);
   color: white;
   text-align: center;
-  padding: 5px 0;
-  position: fixed; /* fixed로 변경하여 화면 하단에 고정 */
+  line-height: 1rem;
+  font-size: 0.75rem;
+  right: 0;
   bottom: 0;
-  width: 100%;
+  position: fixed;
+  width: 30%;
+  padding: 1rem 1rem;
 }
 
 /* 일반 형제 선택자 */
