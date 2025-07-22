@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="banner">
+    <h1>홈</h1>
+  </header>
+
+  <main class="login-container">
+    <div class="form-box">
+      <p id="welcome-message">로그인되었습니다.</p>
+    </div>
+  </main>
+
+    <script>
+    const user = localStorage.getItem("loggedInUser");
+    if (!user) {
+      alert("로그인이 필요합니다.");
+      window.location.href = "index.html";
+    } else {
+      const data = JSON.parse(user);
+      document.getElementById("welcome-message").textContent = `환영합니다, ${data.name}님!`;
+    }
+  </script>
+</body>
+</html>
