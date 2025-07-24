@@ -1,150 +1,48 @@
-/* 전체 선택자 */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* 태그 선택자 */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20rem;  /* 푸터 높이만큼 */
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
 }
 
-/* 아이디 선택자 */
-#main-header {
-  background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  background-size: cover;
+.banner {
+  background-color: #343a40;
   color: white;
+  padding: 30px 0;
   text-align: center;
-  padding: 20px 0;
-  height: 200px; /* 높이를 더 키웠습니다. */
 }
 
-/* 클래스 선택자 */
-.header-container {
+.login-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 60px;
 }
 
-/* 자손 선택자 */
-.sidebar nav ul {
-  list-style: none;
-  padding: 10px;
-}
-
-.sidebar nav ul li a {
-  display: block;
-  padding: 10px;
-  color: white;
-  background-color: #4CAF50;
-  text-decoration: none;
-  margin-bottom: 5px;
-  transition: background-color 0.3s;
-}
-
-/* 가상 클래스 선택자 */
-.sidebar nav ul li a:hover {
-  background-color: #45a049;
-}
-
-/* 자식 선택자 */
-.signup-form > form {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  margin: 0 auto;
+.form-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
   width: 300px;
 }
 
-/* 인접 형제 선택자 */
-.signup-form label + input {
-  margin-bottom: 10px;
-}
-
-/* 가상 요소 선택자 */
-.signup-form label[for="name"]::before {
-  content: '👤';
-  margin-right: 5px;
-}
-
-/* 박스모델 속성 */
-.signup-form input, .signup-form button {
+.form-box input {
+  width: 95%;
   padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin-bottom: 15px;
+  margin: 10px 0;
+  font-size: 16px;
 }
 
-.signup-form button {
-  background-color: #4CAF50;
+.form-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: royalblue;
   color: white;
+  font-size: 16px;
+  border: none;
   cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-/* Transition */
-.signup-form button:hover {
-  background-color: #45a049;
-}
-
-/* CSS Position */
-.sidebar {
-  position: absolute; /* absolute로 변경하여 헤더 아래에 위치 */
-  top: 220px; /* 헤더 높이 + 여백 */
-  left: 20px;
-  width: 200px;
-}
-
-/* 플렉스 레이아웃 */
-.main-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 20px;
-  flex: 1; /* 콘텐츠 영역이 남은 공간을 차지하도록 설정 */
-}
-
-/* 그리드 레이아웃 */
-.sidebar nav ul {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-}
-
-/* 애니메이션 */
-button:hover {
-  animation: pulse 0.5s;
-}
-
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
-}
-
-/* 푸터 스타일 */
-footer {
-  background-color: rgba(51, 51, 51, 0.9);
-  color: white;
-  text-align: center;
-  line-height: 1rem;
-  font-size: 0.75rem;
-  right: 0;
-  bottom: 0;
-  position: fixed;
-  width: 30%;
-  padding: 1rem 1rem;
-}
-
-/* 일반 형제 선택자 */
-footer p ~ p {
   margin-top: 10px;
+}
+
+.form-box button:hover {
+  background-color: darkblue;
 }
