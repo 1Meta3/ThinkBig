@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery 실습</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+    button {
+      margin: 5px;
+      padding: 8px 16px;
+    }
+    #todoList li {
+      cursor: pointer;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 과제 2 -->
+  <h3>과제 2: 문장 보이기/숨기기</h3>
+  <button id="hideBtn">숨기기</button>
+  <button id="showBtn">보이기</button>
+  <p id="text">내가 사라져볼게</p>
+
+  <!-- 과제 3 -->
+  <h3>과제 3: 클릭과 더블클릭 스타일</h3>
+  <p id="myPara">더블클릭하거나 클릭해보세요</p>
+
+  <!-- 과제 4 + 6 -->
+  <h3>과제 4 & 6: 할 일 리스트</h3>
+  <input id="todoInput" placeholder="할 일을 입력하세요" />
+  <button id="addBtn">추가</button>
+  <ul id="todoList"></ul>
+
+  <!-- 과제 5 -->
+  <h3>과제 5: 이미지 토글</h3>
+  <button id="fadeBtn">이미지 토글</button><br />
+  <img id="myImg" src="../deer.png" style="margin-top:10px;" />
+
+  <script>
+    // 과제 2
+    let isClicked = false;
+
+    $("#hideBtn").on("click", function () {
+      $("#text").hide();
+      isClicked = true;
+    });
+
+    $("#showBtn").on("click", function () {
+        if(isClicked) {
+        $("#text").append(" 얍");
+        isClicked = false;
+        }
+        $("#text").show();
+    });
+
+    // 과제 3
+    $("#myPara").on("click", function () {
+      $(this).css("color", "blue");
+    });
+    $("#myPara").on("dblclick", function () {
+      $(this).css("color", "red");
+    });
+
+    // 과제 4
+    $("#addBtn").on("click", function () {
+      const input = $("#todoInput").val().trim();
+      if (input === "") {
+        alert("공백은 추가할 수 없습니다.");
+      } else {
+        $("#todoList").append("<li>" + input + "</li>");
+        $("#todoInput").val("");
+      }
+    });
+
+    // 과제 5
+    $("#fadeBtn").on("click", function () {
+      $("#myImg").fadeToggle();
+    });
+
+    // 과제 6
+    $("#todoList").on("click", "li", function () {
+      $(this).remove();
+    });
+  </script>
+</body>
+</html>
