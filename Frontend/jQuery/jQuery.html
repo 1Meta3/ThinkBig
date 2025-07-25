@@ -73,7 +73,7 @@
       if (input === "") {
         alert("공백은 추가할 수 없습니다.");
       } else {
-        $("#todoList").append("<li>" + input + "</li>");
+        $("#todoList").append("<li>" + input + "<button class = delBtn>x</button>" + "</li>");
         $("#todoInput").val("");
       }
     });
@@ -84,8 +84,8 @@
     });
 
     // 과제 6
-    $("#todoList").on("click", "li", function () {
-      $(this).remove();
+    $("#todoList").on("click", ".delBtn", function () {
+      $(this).parent().remove();
     });
   </script>
 </body>
