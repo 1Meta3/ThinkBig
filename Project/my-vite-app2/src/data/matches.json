@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "title": "주말 축구 리그",
+    "subCategory": "축구",
+    "region": "서울",
+    "thumbnail": "https://source.unsplash.com/random/400x400?soccer"
+  },
+  {
+    "id": 2,
+    "title": "야구 동호회 대회",
+    "subCategory": "야구",
+    "region": "경기",
+    "thumbnail": "https://source.unsplash.com/random/400x400?baseball"
+  },
+  {
+    "id": 3,
+    "title": "테니스 토너먼트",
+    "subCategory": "테니스",
+    "region": "서울",
+    "thumbnail": "https://source.unsplash.com/random/400x400?tennis"
+  },
+  {
+    "id": 4,
+    "title": "탁구 클럽 대회",
+    "subCategory": "탁구",
+    "region": "부산",
+    "thumbnail": "https://source.unsplash.com/random/400x400?pingpong"
+  },
+  {
+    "id": 5,
+    "title": "체스 챔피언십",
+    "subCategory": "체스",
+    "region": "서울",
+    "thumbnail": "https://source.unsplash.com/random/400x400?chess"
+  },
+  {
+    "id": 6,
+    "title": "바둑 대국",
+    "subCategory": "바둑",
+    "region": "경기",
+    "thumbnail": "https://source.unsplash.com/random/400x400?go"
+  },
+  {
+    "id": 7,
+    "title": "보드게임 밤",
+    "subCategory": "보드게임",
+    "region": "서울",
+    "thumbnail": "https://source.unsplash.com/random/400x400?boardgame"
+  },
+  {
+    "id": 8,
+    "title": "롤 토너먼트",
+    "subCategory": "롤",
+    "region": "부산",
+    "thumbnail": "https://source.unsplash.com/random/400x400?esports"
+  },
+  {
+    "id": 9,
+    "title": "오버워치 대회",
+    "subCategory": "오버워치",
+    "region": "서울",
+    "thumbnail": "https://source.unsplash.com/random/400x400?overwatch"
+  },
+  {
+    "id": 10,
+    "title": "배그 리그",
+    "subCategory": "배그",
+    "region": "경기",
+    "thumbnail": "https://source.unsplash.com/random/400x400?pubg"
+  },
+  {
+    "id": 11,
+    "title": "장기 대회",
+    "subCategory": "장기",
+    "region": "서울",
+    "thumbnail": "https://source.unsplash.com/random/400x400?janggi"
+  },
+  {
+    "id": 12,
+    "title": "풋살 클럽",
+    "subCategory": "축구",
+    "region": "부산",
+    "thumbnail": "https://source.unsplash.com/random/400x400?futsal"
+  }
+]
