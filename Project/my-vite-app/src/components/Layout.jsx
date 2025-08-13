@@ -8,9 +8,9 @@ const Layout = ({ children }) => {
       <Header />
       <div className="d-flex">
         <Sidebar />
-        <main className="flex-grow-1 p-4" style={{ minHeight: "100vh", backgroundColor: "#f9f9f9" }}>
+        <Main className="flex-grow-1 p-4" style={{ minHeight: "100vh", backgroundColor: "#f9f9f9" }}>
           {children}
-        </main>
+        </Main>
       </div>
     </>
   );

@@ -26,7 +26,7 @@ const MainContent = styled.div`
   }
 `;
 
-const Main = styled.main`
+const Main = styled.Main`
   flex: 1;
   background: ${(props) => props.theme.colors.surface};
   border-radius: ${(props) => props.theme.borderRadius.xl};
