@@ -1,3 +1,5 @@
+package practice;
+
 public class Ex03 {
 
     /** int... 합계 (오버플로우 줄이려고 long 누적/반환) */

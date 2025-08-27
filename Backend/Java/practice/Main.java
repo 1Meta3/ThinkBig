@@ -1,4 +1,4 @@
-// package 가 있으면 여기에 작성: package your.package.name;
+package practice;// package 가 있으면 여기에 작성: package your.package.name;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
@@ -126,7 +126,7 @@ public class Main {
 
         // 3) 고정폭(ASCII 포함해도 CJK 헤더 대비) — 전부 padOrEllipsize로 처리
         int noCols = 4;      // "[01]"
-        int classCols = 8;   // "Ex01" + 여유
+        int classCols = 8;   // "practice.Ex01" + 여유
         int statusCols = 6;  // "없음"/"OK" 둘 다 여유
 
         // 4) 헤더(모두 CJK 폭 기준 패딩)
@@ -170,7 +170,7 @@ public class Main {
 
     /** 해당 번호의 ExNN 클래스를 찾아 실행
      *  우선순위: main(String[]) → static run() → new 후 run()/start()
-     *  후보 클래스명: Ex%02d, Ex%03d, Ex%d (Ex01, Ex001, Ex1)
+     *  후보 클래스명: Ex%02d, Ex%03d, Ex%d (practice.Ex01, Ex001, Ex1)
      */
     static boolean runExercise(int number) {
         String[] candidates = classNameCandidates(number);
